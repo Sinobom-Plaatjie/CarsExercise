@@ -6,17 +6,20 @@ namespace CarsExercise
     {
         static void Main(string[] args)
         {
-            Car myCar = new Car(2003, "Jazz", 0);
-            myCar.Colour = "Red";
-            myCar.DriveFaster(20);
+            Car mercedes = new Car(1999, "E-Class", 0);
+            mercedes.Colour = "Red with navy";
+            mercedes.DriveFaster(10);
            
             Car angelsCar = new Car(2022, "Porsche", 0);
             angelsCar.Colour = "Pink";
             angelsCar.DriveFaster(120);
 
-            Console.WriteLine("Allans Jazz car: " + myCar.Speed);
+            Console.WriteLine("Allans Mercedes car: " + mercedes.Speed);
             Console.WriteLine("Angels Pink car: " + angelsCar.Speed);
-           
+
+            Console.WriteLine("Mercedes: " + mercedes.Make);
+            Console.WriteLine(mercedes.Speed);
+
             /*
             
             Car vw = new Car(2020, "Polo", 10);
